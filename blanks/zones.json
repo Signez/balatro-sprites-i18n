@@ -695,5 +695,18 @@
         ]
       }
     }
+  },
+  "shop_sign_animation": {
+    "stickers": {
+      "small_blind": {
+        "filename": "shop.png",
+        "locations": [
+          [24, 24],
+          [250, 24],
+          [476, 24],
+          [702, 24]
+        ]
+      }
+    }
   }
 }
