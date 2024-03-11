@@ -57,7 +57,18 @@ function generateShopSignAnimationSheet(zoneData, consumablesLocales) {
           });
         })
       )
-      .toFile("dist/fr/ShopSignAnimation.png")
+      .raw()
+      .toBuffer({ resolveWithObject: true })
+      .then(({ data, info }) =>
+        Promise.all([
+          sharp(data, { raw: info })
+            .resize(info.width / 2, info.height / 2, {
+              kernel: sharp.kernel.nearest,
+            })
+            .toFile("dist/fr/1x/ShopSignAnimation.png"),
+          sharp(data, { raw: info }).toFile("dist/fr/2x/ShopSignAnimation.png"),
+        ])
+      )
   );
 }
 

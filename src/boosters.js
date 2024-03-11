@@ -80,7 +80,18 @@ function generateBoostersSheet(zoneData, consumablesLocales) {
           };
         })
       )
-      .toFile("dist/fr/boosters.png")
+      .raw()
+      .toBuffer({ resolveWithObject: true })
+      .then(({ data, info }) =>
+        Promise.all([
+          sharp(data, { raw: info })
+            .resize(info.width / 2, info.height / 2, {
+              kernel: sharp.kernel.nearest,
+            })
+            .toFile("dist/fr/1x/boosters.png"),
+          sharp(data, { raw: info }).toFile("dist/fr/2x/boosters.png"),
+        ])
+      )
   );
 }
 

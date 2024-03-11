@@ -8,7 +8,8 @@ const { generateJokersSheet } = require("./src/jokers");
 const { generateShopSignAnimationSheet } = require("./src/shop");
 
 // Ensure the output directory exist for this locale
-fs.mkdirSync("dist/fr", { recursive: true });
+fs.mkdirSync("dist/fr/1x", { recursive: true });
+fs.mkdirSync("dist/fr/2x", { recursive: true });
 
 const fontPath = fs.realpathSync(
   "assets/balatro-extended-consumable-cards.ttf"
