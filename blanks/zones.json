@@ -708,5 +708,43 @@
         ]
       }
     }
+  },
+  "jokers": {
+    "j_credit_card": {
+      "filename": "jokers/j_credit_card.png",
+      "location": [710, 190]
+    },
+    "j_loyalty_card": {
+      "filename": "jokers/j_loyalty_card.png",
+      "location": [568, 380]
+    },
+    "j_ride_the_bus": {
+      "filename": "jokers/j_ride_the_bus.png",
+      "location": [142, 1140]
+    },
+    "j_hanging_chad": {
+      "filename": "jokers/j_hanging_chad.png",
+      "location": [1278, 1140]
+    },
+    "j_drivers_license": {
+      "filename": "jokers/j_drivers_license.png",
+      "location": [0, 1330]
+    },
+    "j_certificate": {
+      "filename": "jokers/j_certificate.png",
+      "location": [1136, 1520]
+    },
+    "j_todo_list": {
+      "filename": "jokers/j_todo_list.png",
+      "location": [568, 2090]
+    },
+    "j_gift": {
+      "filename": "jokers/j_gift.png",
+      "location": [426, 2470]
+    },
+    "j_reserved_parking": {
+      "filename": "jokers/j_reserved_parking.png",
+      "location": [852, 2470]
+    }
   }
 }

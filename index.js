@@ -4,6 +4,7 @@ const { generateTarotsSheet } = require("./src/tarots");
 const { generateBoostersSheet } = require("./src/boosters");
 const { generateVouchersSheet } = require("./src/vouchers");
 const { generateBlindChipsSheet } = require("./src/blind_chips");
+const { generateJokersSheet } = require("./src/jokers");
 const { generateShopSignAnimationSheet } = require("./src/shop");
 
 // Ensure the output directory exist for this locale
@@ -36,4 +37,8 @@ generateBlindChipsSheet(zoneData, consumablesLocales).then(() =>
 
 generateShopSignAnimationSheet(zoneData, consumablesLocales).then(() =>
   console.log("Shop sign animation sheet generated.")
+);
+
+generateJokersSheet(zoneData, consumablesLocales).then(() =>
+  console.log("Jokers sheet generated.")
 );
