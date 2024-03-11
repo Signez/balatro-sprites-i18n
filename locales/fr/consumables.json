@@ -1,0 +1,100 @@
+{
+  "overrides": {
+    "Tarots.png": {
+      "c_black_hole": {
+        "filename": "black-hole.png",
+        "location": [1302, 610]
+      }
+    },
+    "boosters.png": {
+      "bs_ap5": {
+        "filename": "arcana-paquet.png",
+        "location": [24, 490]
+      },
+      "bs_ap6": {
+        "filename": "arcana-paquet.png",
+        "location": [166, 490]
+      },
+      "bs_ap7": {
+        "filename": "arcana-paquet.png",
+        "location": [308, 490]
+      },
+      "bs_ap8": {
+        "filename": "arcana-paquet.png",
+        "location": [450, 490]
+      },
+      "bs_cp7": {
+        "filename": "celestial-pack.png",
+        "location": [310, 690]
+      },
+      "bs_cp8": {
+        "filename": "celestial-pack.png",
+        "location": [452, 690]
+      },
+      "bs_st5": {
+        "location": [20, 1404]
+      },
+      "bs_st6": {
+        "location": [162, 1404]
+      }
+    }
+  },
+  "tarots": {
+    "c_fool": "MAT",
+    "c_magician": "BATELEUR",
+    "c_high_priestess": "PAPESSE",
+    "c_empress": "impératrice",
+    "c_emperor": "EMPEREUR",
+    "c_heirophant": "PAPE",
+    "c_lovers": "AMOUREUX",
+    "c_chariot": "CHARIOT",
+    "c_justice": "JUSTICE",
+    "c_hermit": "ERMITE",
+    "c_wheel_of_fortune": "roue\u00B6fortune",
+    "c_strength": "FORCE",
+    "c_hanged_man": "PENDU",
+    "c_death": "MORT",
+    "c_temperance": "TEMPÉRENCE",
+    "c_devil": "DIABLE",
+    "c_tower": "maison dieu",
+    "c_star": "ÉTOILE",
+    "c_moon": "LUNE",
+    "c_sun": "SOLEIL",
+    "c_judgement": "JUGEMENT",
+    "c_world": "MONDE"
+  },
+  "planets": {
+    "c_mercury": "MERCURE",
+    "c_venus": "VÉNUS",
+    "c_earth": "TERRE",
+    "c_mars": "MARS",
+    "c_jupiter": "JUPITER",
+    "c_saturn": "SATURNE",
+    "c_uranus": "URANUS",
+    "c_neptune": "NEPTUNE",
+    "c_pluto": "PLUTON",
+    "c_ceres": "CÉRÈS",
+    "c_planet_x": "planète X",
+    "c_eris": "ÉRIS"
+  },
+  "spectrals": {
+    "c_familiar": "FAMILIER",
+    "c_grim": "SINISTRE",
+    "c_incantation": "incantation",
+    "c_talisman": "TALISMAN",
+    "c_aura": "AURA",
+    "c_wraith": "APPARITION",
+    "c_sigil": "SIGIL",
+    "c_ouija": "OUIJA",
+    "c_ectoplasm": "ectoplasme",
+    "c_immolate": "immolation",
+    "c_soul": "ÂME",
+    "c_black_hole": null,
+    "c_ankh": "ANKH",
+    "c_deja_vu": "DÉJA-VU",
+    "c_hex": "MALÉFICE",
+    "c_trance": "TRANSE",
+    "c_medium": "MÉDIUM",
+    "c_cryptid": "CRYPTIDE"
+  }
+}

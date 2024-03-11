@@ -1,0 +1,25 @@
+{
+  "name": "balatro-sprite-i18n",
+  "version": "0.1.0",
+  "description": "Balatro i18n sprites generator for community translation mods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Signez/balatro-sprites-i18n.git"
+  },
+  "keywords": [
+    "balatro"
+  ],
+  "author": "Signez (Stanislas Signoud)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Signez/balatro-sprites-i18n/issues"
+  },
+  "homepage": "https://github.com/Signez/balatro-sprites-i18n#readme",
+  "dependencies": {
+    "sharp": "^0.33.2"
+  }
+}

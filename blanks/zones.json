@@ -1,0 +1,699 @@
+{
+  "tarots": {
+    "text_color": [79, 99, 103],
+    "label_backgrounds": {
+      "standard": {
+        "max_text_width": 82,
+        "filename": null
+      },
+      "extended": {
+        "max_text_width": 90,
+        "filename": "tarots-extended-label.png",
+        "deltaLeft": -10,
+        "deltaTop": -4,
+        "paddingLeft": 6
+      },
+      "cardwide": {
+        "max_text_width": 110,
+        "filename": "tarots-cardwide-label.png",
+        "deltaLeft": -14,
+        "deltaTop": -4,
+        "paddingLeft": 0
+      }
+    },
+    "anchors": {
+      "c_fool": [30, 168],
+      "c_magician": [172, 168],
+      "c_high_priestess": [314, 168],
+      "c_empress": [456, 168],
+      "c_emperor": [598, 168],
+      "c_heirophant": [740, 168],
+      "c_lovers": [882, 168],
+      "c_chariot": [1024, 168],
+      "c_justice": [1166, 168],
+      "c_hermit": [1308, 168],
+      "c_wheel_of_fortune": [30, 358],
+      "c_strength": [172, 358],
+      "c_hanged_man": [314, 358],
+      "c_death": [456, 358],
+      "c_temperance": [598, 358],
+      "c_devil": [740, 358],
+      "c_tower": [882, 358],
+      "c_star": [1024, 358],
+      "c_moon": [1166, 358],
+      "c_sun": [1308, 358],
+      "c_judgement": [30, 548],
+      "c_world": [172, 548]
+    }
+  },
+  "planets": {
+    "text_color": [79, 99, 103],
+    "label_backgrounds": {
+      "standard": {
+        "max_text_width": 74
+      },
+      "extended": {
+        "max_text_width": 86,
+        "filename": "planets-extended-label.png",
+        "deltaLeft": -16,
+        "deltaTop": -6,
+        "paddingLeft": 10
+      },
+      "cardwide": {
+        "max_text_width": 110,
+        "filename": "planets-cardwide-label.png",
+        "deltaLeft": -18,
+        "deltaTop": -6,
+        "paddingLeft": 0
+      }
+    },
+    "anchors": {
+      "c_mercury": [34, 610],
+      "c_venus": [176, 610],
+      "c_earth": [318, 610],
+      "c_mars": [460, 610],
+      "c_jupiter": [602, 610],
+      "c_saturn": [744, 610],
+      "c_uranus": [886, 610],
+      "c_neptune": [1028, 610],
+      "c_pluto": [1170, 610],
+      "c_ceres": [1170, 420],
+      "c_planet_x": [1312, 420],
+      "c_eris": [460, 420]
+    }
+  },
+  "spectrals": {
+    "text_color": [79, 99, 103],
+    "label_backgrounds": {
+      "standard": {
+        "max_text_width": 86
+      },
+      "extended": {
+        "max_text_width": 94,
+        "filename": "spectrals-extended-label.png",
+        "deltaLeft": -12,
+        "deltaTop": -2,
+        "paddingLeft": 8
+      },
+      "cardwide": {
+        "max_text_width": 106,
+        "filename": "spectrals-cardwide-label.png",
+        "deltaLeft": -12,
+        "deltaTop": -2,
+        "paddingLeft": 2
+      }
+    },
+    "anchors": {
+      "c_familiar": [28, 926],
+      "c_grim": [170, 926],
+      "c_incantation": [312, 926],
+      "c_talisman": [454, 926],
+      "c_aura": [596, 926],
+      "c_wraith": [738, 926],
+      "c_sigil": [880, 926],
+      "c_ouija": [1022, 926],
+      "c_ectoplasm": [1164, 926],
+      "c_immolate": [1306, 926],
+      "c_soul": [312, 548],
+      "c_black_hole": [1306, 610],
+      "c_ankh": [28, 1116],
+      "c_deja_vu": [170, 1116],
+      "c_hex": [312, 1116],
+      "c_trance": [454, 1116],
+      "c_medium": [596, 1116],
+      "c_cryptid": [738, 1116]
+    }
+  },
+  "boosters": {
+    "stickers": {
+      "bs_ap1": {
+        "filename": "arcana-pack.png",
+        "location": [24, 110]
+      },
+      "bs_ap2": {
+        "filename": "arcana-pack.png",
+        "location": [166, 110]
+      },
+      "bs_ap3": {
+        "filename": "arcana-pack.png",
+        "location": [308, 110]
+      },
+      "bs_ap4": {
+        "filename": "arcana-pack.png",
+        "location": [450, 110]
+      },
+      "bs_cp1": {
+        "filename": "celestial-pack.png",
+        "location": [28, 306]
+      },
+      "bs_cp2": {
+        "filename": "celestial-pack.png",
+        "location": [170, 306]
+      },
+      "bs_cp3": {
+        "filename": "celestial-pack.png",
+        "location": [312, 306]
+      },
+      "bs_cp4": {
+        "filename": "celestial-pack.png",
+        "location": [454, 306]
+      },
+      "bs_jb1": {
+        "filename": "jumbo.png",
+        "location": [36, 410],
+        "colorSwaps": [
+          { "from": [0, 0, 0, 255], "to": [0, 0, 0, 70] },
+          { "from": [175, 175, 175, 255], "to": [198, 161, 161, 255] }
+        ]
+      },
+      "bs_ap5": {
+        "filename": "arcana-pack.png",
+        "location": [24, 490]
+      },
+      "bs_jb2": {
+        "filename": "jumbo.png",
+        "location": [178, 410],
+        "colorSwaps": [
+          { "from": [0, 0, 0, 255], "to": [0, 0, 0, 70] },
+          { "from": [175, 175, 175, 255], "to": [198, 161, 161, 255] }
+        ]
+      },
+      "bs_ap6": {
+        "filename": "arcana-pack.png",
+        "location": [166, 490]
+      },
+      "bs_mg1": {
+        "filename": "mega.png",
+        "location": [302, 410],
+        "colorSwaps": [
+          { "from": [0, 0, 0, 255], "to": [0, 0, 0, 0] },
+          { "from": [20, 20, 20, 255], "to": [0, 0, 0, 80] },
+          { "from": [40, 40, 40, 255], "to": [0, 0, 0, 140] },
+          { "from": [48, 48, 48, 255], "to": [0, 0, 0, 20] },
+          { "from": [55, 55, 55, 255], "to": [0, 0, 0, 86] },
+          { "from": [71, 71, 71, 255], "to": [0, 0, 0, 40] },
+          { "from": [105, 105, 105, 255], "to": [80, 82, 162, 255] },
+          { "from": [162, 162, 162, 255], "to": [128, 132, 195, 255] },
+          { "from": [198, 198, 198, 255], "to": [186, 223, 243, 255] }
+        ]
+      },
+      "bs_ap7": {
+        "filename": "arcana-pack.png",
+        "location": [308, 490]
+      },
+      "bs_mg2": {
+        "filename": "mega.png",
+        "location": [444, 412],
+        "colorSwaps": [
+          { "from": [0, 0, 0, 255], "to": [0, 0, 0, 0] },
+          { "from": [20, 20, 20, 255], "to": [0, 0, 0, 80] },
+          { "from": [40, 40, 40, 255], "to": [0, 0, 0, 140] },
+          { "from": [48, 48, 48, 255], "to": [0, 0, 0, 20] },
+          { "from": [55, 55, 55, 255], "to": [0, 0, 0, 86] },
+          { "from": [71, 71, 71, 255], "to": [0, 0, 0, 40] },
+          { "from": [105, 105, 105, 255], "to": [80, 82, 162, 255] },
+          { "from": [162, 162, 162, 255], "to": [128, 132, 195, 255] },
+          { "from": [198, 198, 198, 255], "to": [186, 223, 243, 255] }
+        ]
+      },
+      "bs_ap8": {
+        "filename": "arcana-pack.png",
+        "location": [450, 490]
+      },
+      "bs_jb3": {
+        "filename": "jumbo.png",
+        "location": [36, 600],
+        "colorSwaps": [
+          { "from": [0, 0, 0, 255], "to": [0, 0, 0, 70] },
+          { "from": [175, 175, 175, 255], "to": [198, 161, 161, 255] }
+        ]
+      },
+      "bs_cp5": {
+        "filename": "celestial-pack.png",
+        "location": [26, 686]
+      },
+      "bs_jb4": {
+        "filename": "jumbo.png",
+        "location": [178, 600],
+        "colorSwaps": [
+          { "from": [0, 0, 0, 255], "to": [0, 0, 0, 70] },
+          { "from": [175, 175, 175, 255], "to": [198, 161, 161, 255] }
+        ]
+      },
+      "bs_cp6": {
+        "filename": "celestial-pack.png",
+        "location": [168, 686]
+      },
+      "bs_mg3": {
+        "filename": "mega.png",
+        "location": [302, 602],
+        "colorSwaps": [
+          { "from": [0, 0, 0, 255], "to": [0, 0, 0, 0] },
+          { "from": [20, 20, 20, 255], "to": [0, 0, 0, 80] },
+          { "from": [40, 40, 40, 255], "to": [0, 0, 0, 140] },
+          { "from": [48, 48, 48, 255], "to": [0, 0, 0, 20] },
+          { "from": [55, 55, 55, 255], "to": [0, 0, 0, 75] },
+          { "from": [71, 71, 71, 255], "to": [0, 0, 0, 40] },
+          { "from": [105, 105, 105, 255], "to": [80, 82, 162, 255] },
+          { "from": [162, 162, 162, 255], "to": [128, 132, 195, 255] },
+          { "from": [198, 198, 198, 255], "to": [186, 223, 243, 255] }
+        ]
+      },
+      "bs_blob1": {
+        "filename": "celestial-blobby-label.png",
+        "location": [304, 688]
+      },
+      "bs_cp7": {
+        "filename": "celestial-pack.png",
+        "location": [310, 690]
+      },
+      "bs_mg4": {
+        "filename": "mega.png",
+        "location": [444, 602],
+        "colorSwaps": [
+          { "from": [0, 0, 0, 255], "to": [0, 0, 0, 0] },
+          { "from": [20, 20, 20, 255], "to": [0, 0, 0, 80] },
+          { "from": [40, 40, 40, 255], "to": [0, 0, 0, 140] },
+          { "from": [48, 48, 48, 255], "to": [0, 0, 0, 20] },
+          { "from": [55, 55, 55, 255], "to": [0, 0, 0, 75] },
+          { "from": [71, 71, 71, 255], "to": [0, 0, 0, 40] },
+          { "from": [105, 105, 105, 255], "to": [80, 82, 162, 255] },
+          { "from": [162, 162, 162, 255], "to": [128, 132, 195, 255] },
+          { "from": [198, 198, 198, 255], "to": [186, 223, 243, 255] }
+        ]
+      },
+      "bs_blob2": {
+        "filename": "celestial-blobby-label.png",
+        "location": [446, 688]
+      },
+      "bs_cp8": {
+        "filename": "celestial-pack.png",
+        "location": [452, 690]
+      },
+      "bs_sp1": {
+        "filename": "spectral-pack-sparse.png",
+        "location": [24, 832]
+      },
+      "bs_sp2": {
+        "filename": "spectral-pack-sparse.png",
+        "location": [166, 832]
+      },
+      "bs_jb5": {
+        "filename": "jumbo.png",
+        "location": [320, 790],
+        "colorSwaps": [
+          { "from": [0, 0, 0, 255], "to": [0, 0, 0, 70] },
+          { "from": [175, 175, 175, 255], "to": [198, 161, 161, 255] }
+        ]
+      },
+      "bs_sp3": {
+        "filename": "spectral-pack.png",
+        "location": [302, 852],
+        "colorSwaps": [
+          { "from": [224, 224, 224, 255], "to": [99, 143, 225, 255] },
+          { "from": [167, 167, 167, 255], "to": [94, 114, 151, 255] }
+        ]
+      },
+      "bs_mg5": {
+        "filename": "mega.png",
+        "location": [444, 792],
+        "colorSwaps": [
+          { "from": [0, 0, 0, 255], "to": [0, 0, 0, 58] },
+          { "from": [20, 20, 20, 255], "to": [0, 0, 0, 80] },
+          { "from": [40, 40, 40, 255], "to": [0, 0, 0, 140] },
+          { "from": [48, 48, 48, 255], "to": [0, 0, 0, 20] },
+          { "from": [55, 55, 55, 255], "to": [0, 0, 0, 100] },
+          { "from": [71, 71, 71, 255], "to": [0, 0, 0, 40] },
+          { "from": [105, 105, 105, 255], "to": [80, 82, 162, 255] },
+          { "from": [162, 162, 162, 255], "to": [128, 132, 195, 255] },
+          { "from": [198, 198, 198, 255], "to": [186, 223, 243, 255] }
+        ]
+      },
+      "bs_sp4": {
+        "filename": "spectral-pack-dense.png",
+        "location": [458, 886]
+      },
+      "bs_st1": {
+        "filename": "standard-pack.png",
+        "location": [20, 1206],
+        "colorSwaps": [
+          { "from": [162, 162, 162, 255], "to": [226, 162, 95, 255] },
+          { "from": [40, 40, 40, 255], "to": [156, 57, 33, 255] }
+        ],
+        "gradientSwaps": [
+          {
+            "needle": [0, 0, 0, 255],
+            "from": [199, 79, 55, 255],
+            "to": [207, 132, 47, 255]
+          }
+        ]
+      },
+      "bs_st2": {
+        "filename": "standard-pack.png",
+        "location": [162, 1206],
+        "colorSwaps": [
+          { "from": [162, 162, 162, 255], "to": [93, 221, 236, 255] },
+          { "from": [40, 40, 40, 255], "to": [40, 80, 114, 255] }
+        ],
+        "gradientSwaps": [
+          {
+            "needle": [0, 0, 0, 255],
+            "from": [66, 137, 162, 255],
+            "to": [61, 100, 167, 255]
+          }
+        ]
+      },
+      "bs_st3": {
+        "filename": "standard-pack.png",
+        "location": [304, 1206],
+        "colorSwaps": [
+          { "from": [162, 162, 162, 255], "to": [226, 95, 122, 255] },
+          { "from": [40, 40, 40, 255], "to": [156, 33, 97, 255] }
+        ],
+        "gradientSwaps": [
+          {
+            "needle": [0, 0, 0, 255],
+            "from": [199, 55, 134, 255],
+            "to": [207, 44, 77, 255]
+          }
+        ]
+      },
+      "bs_st4": {
+        "filename": "standard-pack.png",
+        "location": [446, 1206],
+        "colorSwaps": [
+          { "from": [162, 162, 162, 255], "to": [169, 238, 52, 255] },
+          { "from": [40, 40, 40, 255], "to": [52, 103, 33, 255] }
+        ],
+        "gradientSwaps": [
+          {
+            "needle": [0, 0, 0, 255],
+            "from": [98, 146, 55, 255],
+            "to": [61, 150, 50, 255]
+          }
+        ]
+      },
+      "bs_jb6": {
+        "filename": "jumbo.png",
+        "location": [36, 1362],
+        "colorSwaps": [{ "from": [0, 0, 0, 255], "to": [61, 85, 187, 255] }]
+      },
+      "bs_st5": {
+        "filename": "standard-pack.png",
+        "location": [20, 1414],
+        "colorSwaps": [
+          { "from": [162, 162, 162, 255], "to": [94, 191, 244, 255] },
+          { "from": [40, 40, 40, 255], "to": [34, 73, 103, 255] }
+        ],
+        "gradientSwaps": [
+          {
+            "needle": [0, 0, 0, 255],
+            "from": [55, 107, 167, 255],
+            "to": [49, 135, 142, 255]
+          }
+        ]
+      },
+      "bs_jb7": {
+        "filename": "jumbo.png",
+        "location": [178, 1362],
+        "colorSwaps": [{ "from": [0, 0, 0, 255], "to": [175, 69, 181, 255] }]
+      },
+      "bs_st6": {
+        "filename": "standard-pack.png",
+        "location": [162, 1414],
+        "colorSwaps": [
+          { "from": [162, 162, 162, 255], "to": [165, 104, 234, 255] },
+          { "from": [40, 40, 40, 255], "to": [71, 38, 98, 255] }
+        ],
+        "gradientSwaps": [
+          {
+            "needle": [0, 0, 0, 255],
+            "from": [126, 62, 160, 255],
+            "to": [71, 55, 136, 255]
+          }
+        ]
+      },
+      "bs_mg6": {
+        "filename": "mega.png",
+        "location": [302, 1366],
+        "colorSwaps": [
+          { "from": [20, 20, 20, 255], "to": [84, 51, 57, 255] },
+          { "from": [40, 40, 40, 255], "to": [84, 51, 57, 255] },
+          { "from": [48, 48, 48, 255], "to": [190, 141, 162, 255] },
+          { "from": [55, 55, 55, 255], "to": [0, 0, 0, 255] },
+          { "from": [71, 71, 71, 255], "to": [190, 141, 162, 255] },
+          { "from": [105, 105, 105, 255], "to": [101, 107, 110, 255] },
+          { "from": [198, 198, 198, 255], "to": [205, 231, 236, 255] }
+        ],
+        "gradientSwaps": [
+          {
+            "needle": [0, 0, 0, 255],
+            "from": [137, 74, 77, 255],
+            "to": [134, 90, 107, 255]
+          }
+        ]
+      },
+      "bs_st7": {
+        "filename": "standard-pack.png",
+        "location": [304, 1420],
+        "colorSwaps": [
+          { "from": [162, 162, 162, 255], "to": [188, 164, 230, 255] },
+          { "from": [40, 40, 40, 255], "to": [82, 59, 80, 255] }
+        ],
+        "gradientSwaps": [
+          {
+            "needle": [0, 0, 0, 255],
+            "from": [133, 97, 121, 255],
+            "to": [107, 84, 130, 255]
+          }
+        ]
+      },
+      "bs_mg7": {
+        "filename": "mega.png",
+        "location": [444, 1366],
+        "colorSwaps": [
+          { "from": [20, 20, 20, 255], "to": [61, 90, 45, 255] },
+          { "from": [40, 40, 40, 255], "to": [61, 90, 45, 255] },
+          { "from": [48, 48, 48, 255], "to": [172, 199, 134, 255] },
+          { "from": [55, 55, 55, 255], "to": [0, 0, 0, 255] },
+          { "from": [71, 71, 71, 255], "to": [172, 199, 134, 255] },
+          { "from": [105, 105, 105, 255], "to": [112, 99, 110, 255] },
+          { "from": [198, 198, 198, 255], "to": [242, 199, 242, 255] }
+        ],
+        "gradientSwaps": [
+          {
+            "needle": [0, 0, 0, 255],
+            "from": [81, 149, 62, 255],
+            "to": [115, 142, 82, 255]
+          }
+        ]
+      },
+      "bs_st8": {
+        "filename": "standard-pack.png",
+        "location": [446, 1420],
+        "colorSwaps": [
+          { "from": [162, 162, 162, 255], "to": [241, 170, 152, 255] },
+          { "from": [40, 40, 40, 255], "to": [86, 84, 55, 255] }
+        ],
+        "gradientSwaps": [
+          {
+            "needle": [0, 0, 0, 255],
+            "from": [131, 140, 90, 255],
+            "to": [139, 96, 75, 255]
+          }
+        ]
+      },
+      "bs_jb8": {
+        "filename": "jumbo.png",
+        "location": [320, 1550],
+        "colorSwaps": [
+          { "from": [0, 0, 0, 255], "to": [0, 0, 0, 70] },
+          { "from": [175, 175, 175, 255], "to": [112, 174, 219, 255] }
+        ]
+      },
+      "bs_bp1": {
+        "filename": "buffon-pack.png",
+        "location": [24, 1624],
+        "colorSwaps": [{ "from": [86, 86, 86, 255], "to": [162, 97, 94, 255] }],
+        "gradientSwaps": [
+          {
+            "needle": [0, 0, 0, 255],
+            "from": [162, 97, 94, 255],
+            "to": [253, 95, 85, 255]
+          }
+        ]
+      },
+      "bs_bp2": {
+        "filename": "buffon-pack.png",
+        "location": [166, 1632],
+        "colorSwaps": [
+          { "from": [86, 86, 86, 255], "to": [170, 120, 32, 255] }
+        ],
+        "gradientSwaps": [
+          {
+            "needle": [0, 0, 0, 255],
+            "from": [170, 120, 32, 255],
+            "to": [253, 162, 0, 255]
+          }
+        ]
+      },
+      "bs_bp3": {
+        "filename": "buffon-pack.png",
+        "location": [308, 1632],
+        "colorSwaps": [
+          { "from": [86, 86, 86, 255], "to": [43, 101, 138, 255] }
+        ],
+        "gradientSwaps": [
+          {
+            "needle": [0, 0, 0, 255],
+            "from": [43, 101, 138, 255],
+            "to": [0, 156, 253, 255]
+          }
+        ]
+      },
+      "bs_mg8": {
+        "filename": "mega.png",
+        "location": [444, 1550],
+        "colorSwaps": [
+          { "from": [0, 0, 0, 255], "to": [0, 0, 0, 58] },
+          { "from": [20, 20, 20, 255], "to": [0, 0, 0, 80] },
+          { "from": [40, 40, 40, 255], "to": [0, 0, 0, 140] },
+          { "from": [48, 48, 48, 255], "to": [0, 0, 0, 20] },
+          { "from": [55, 55, 55, 255], "to": [0, 0, 0, 100] },
+          { "from": [71, 71, 71, 255], "to": [0, 0, 0, 40] },
+          { "from": [105, 105, 105, 255], "to": [71, 105, 156, 255] },
+          { "from": [162, 162, 162, 255], "to": [114, 161, 191, 255] },
+          { "from": [198, 198, 198, 255], "to": [166, 231, 242, 255] }
+        ]
+      },
+      "bs_bp4": {
+        "filename": "buffon-pack.png",
+        "location": [450, 1638],
+        "colorSwaps": [
+          { "from": [86, 86, 86, 255], "to": [30, 116, 168, 255] }
+        ],
+        "gradientSwaps": [
+          {
+            "needle": [0, 0, 0, 255],
+            "from": [30, 116, 168, 255],
+            "to": [100, 187, 240, 255]
+          }
+        ]
+      }
+    }
+  },
+  "vouchers": {
+    "stickers": {
+      "voucher_label": {
+        "filename": "voucher.png",
+        "tint": [79, 99, 103, 255],
+        "locations": [
+          [36, 24],
+          [178, 24],
+          [320, 24],
+          [462, 24],
+          [604, 24],
+          [746, 24],
+          [888, 24],
+          [36, 404],
+          [178, 404],
+          [320, 404],
+          [462, 404],
+          [604, 404],
+          [746, 404],
+          [888, 404],
+          [1030, 404]
+        ]
+      },
+      "white_voucher_label": {
+        "filename": "voucher.png",
+        "tint": [255, 255, 255, 255],
+        "locations": [
+          [36, 214],
+          [178, 214],
+          [320, 214],
+          [462, 214],
+          [604, 214],
+          [746, 214],
+          [888, 214],
+          [1030, 214],
+          [36, 594],
+          [178, 594],
+          [320, 594],
+          [462, 594],
+          [604, 594],
+          [746, 594],
+          [888, 594],
+          [1030, 594]
+        ]
+      },
+      "dimmed_voucher_label": {
+        "filename": "voucher.png",
+        "tint": [176, 198, 202, 255],
+        "locations": [[1030, 24]]
+      }
+    }
+  },
+  "blind_chips": {
+    "stickers": {
+      "small_blind": {
+        "filename": "small-blind.png",
+        "tint": [229, 234, 248, 255],
+        "ifColorInBlank": [106, 127, 191, 255],
+        "thenColor": [255, 255, 255, 255],
+        "locations": [
+          [8, 20],
+          [76, 20],
+          [144, 20],
+          [212, 20],
+          [280, 20],
+          [348, 20],
+          [416, 20],
+          [484, 20],
+          [552, 20],
+          [620, 20],
+          [688, 20],
+          [756, 20],
+          [824, 20],
+          [892, 20],
+          [960, 20],
+          [1028, 20],
+          [1096, 20],
+          [1164, 20],
+          [1232, 20],
+          [1300, 20],
+          [1368, 20]
+        ]
+      },
+      "big_blind": {
+        "filename": "big-blind.png",
+        "tint": [60, 75, 78, 255],
+        "ifColorInBlank": [231, 184, 106, 255],
+        "thenColor": [118, 125, 124, 255],
+        "locations": [
+          [8, 88],
+          [76, 88],
+          [144, 88],
+          [212, 88],
+          [280, 88],
+          [348, 88],
+          [416, 88],
+          [484, 88],
+          [552, 88],
+          [620, 88],
+          [688, 88],
+          [756, 88],
+          [824, 88],
+          [892, 88],
+          [960, 88],
+          [1028, 88],
+          [1096, 88],
+          [1164, 88],
+          [1232, 88],
+          [1300, 88],
+          [1368, 88]
+        ]
+      }
+    }
+  }
+}
