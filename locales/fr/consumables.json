@@ -9,19 +9,19 @@
     "boosters.png": {
       "bs_ap5": {
         "filename": "arcana-paquet.png",
-        "location": [24, 490]
+        "location": [24, 500]
       },
       "bs_ap6": {
         "filename": "arcana-paquet.png",
-        "location": [166, 490]
+        "location": [166, 500]
       },
       "bs_ap7": {
         "filename": "arcana-paquet.png",
-        "location": [308, 490]
+        "location": [308, 498]
       },
       "bs_ap8": {
         "filename": "arcana-paquet.png",
-        "location": [450, 490]
+        "location": [450, 498]
       },
       "bs_cp7": {
         "filename": "celestial-pack.png",
