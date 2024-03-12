@@ -44,7 +44,7 @@ function generateBlindChipsSheet(locale, zoneData, consumablesLocales) {
     .map((composite) => {
       if (!composite.filename) return Promise.resolve(null);
 
-      return sharp("locales/fr/" + composite.filename)
+      return sharp(`locales/${locale}/${composite.filename}`)
         .raw()
         .toBuffer({ resolveWithObject: true })
         .then(({ data, info }) => {

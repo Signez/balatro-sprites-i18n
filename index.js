@@ -8,7 +8,7 @@ const { generateShopSignAnimationSheet } = require("./src/shop");
 const { alphaDiscrepanciesCoordinates } = require("./test/check-alpha");
 const path = require("node:path");
 
-const locale = "fr";
+const locale = process.argv[2] ?? "fr";
 
 // Ensure the output directory exist for this locale
 fs.mkdirSync(`dist/${locale}/1x`, { recursive: true });

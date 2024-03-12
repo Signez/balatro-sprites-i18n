@@ -1,4 +1,5 @@
 const sharp = require("sharp");
+const fs = require("node:fs");
 
 function generateJokersSheet(locale, zoneData, consumablesLocales) {
   const oneDest = `dist/${locale}/1x/Jokers.png`;
@@ -29,7 +30,10 @@ function generateJokersSheet(locale, zoneData, consumablesLocales) {
   const preprocesses = Object.values(composites).map((composite) => {
     if (!composite.filename) return Promise.resolve(null);
 
-    return sharp(`locales/${locale}/${composite.filename}`)
+    const actualFilename = `locales/${locale}/${composite.filename}`;
+    if (!fs.existsSync(actualFilename)) return Promise.resolve(null);
+
+    return sharp(actualFilename)
       .raw()
       .toBuffer({ resolveWithObject: true })
       .then(({ data, info }) => {
