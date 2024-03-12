@@ -1,7 +1,10 @@
 const sharp = require("sharp");
 const fs = require("node:fs");
 
-function generateTarotsSheet(zoneData, consumablesLocales, fontPath) {
+function generateTarotsSheet(locale, zoneData, consumablesLocales, fontPath) {
+  const oneDest = `dist/${locale}/1x/Tarots.png`;
+  const twoDest = `dist/${locale}/2x/Tarots.png`;
+
   const tarotsKeys = Object.keys(zoneData.tarots.anchors);
   const planetsKeys = Object.keys(zoneData.planets.anchors);
   const spectralsKeys = Object.keys(zoneData.spectrals.anchors);
@@ -150,7 +153,7 @@ function generateTarotsSheet(zoneData, consumablesLocales, fontPath) {
               } = override;
 
               return {
-                input: "locales/fr/" + filename,
+                input: `locales/${locale}/${filename}`,
                 left,
                 top,
               };
@@ -165,8 +168,11 @@ function generateTarotsSheet(zoneData, consumablesLocales, fontPath) {
             .resize(info.width / 2, info.height / 2, {
               kernel: sharp.kernel.nearest,
             })
-            .toFile("dist/fr/1x/Tarots.png"),
-          sharp(data, { raw: info }).toFile("dist/fr/2x/Tarots.png"),
+            .toFile(oneDest)
+            .then(() => oneDest),
+          sharp(data, { raw: info })
+            .toFile(twoDest)
+            .then(() => twoDest),
         ])
       )
   );

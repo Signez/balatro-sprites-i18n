@@ -1,7 +1,10 @@
 const sharp = require("sharp");
 const { swapColors, swapUsingGradient } = require("./colorize");
 
-function generateBoostersSheet(zoneData, consumablesLocales) {
+function generateBoostersSheet(locale, zoneData, consumablesLocales) {
+  const oneDest = `dist/${locale}/1x/boosters.png`;
+  const twoDest = `dist/${locale}/2x/boosters.png`;
+
   const stickersKeys = Object.keys(zoneData.boosters.stickers);
   const overrides = consumablesLocales.overrides["boosters.png"] ?? {};
 
@@ -29,7 +32,7 @@ function generateBoostersSheet(zoneData, consumablesLocales) {
   const preprocesses = Object.values(composites).map((composite) => {
     if (!composite.filename) return Promise.resolve(null);
 
-    return sharp("locales/fr/" + composite.filename)
+    return sharp(`locales/${locale}/${composite.filename}`)
       .raw()
       .toBuffer({ resolveWithObject: true })
       .then(({ data, info }) => {
@@ -88,8 +91,11 @@ function generateBoostersSheet(zoneData, consumablesLocales) {
             .resize(info.width / 2, info.height / 2, {
               kernel: sharp.kernel.nearest,
             })
-            .toFile("dist/fr/1x/boosters.png"),
-          sharp(data, { raw: info }).toFile("dist/fr/2x/boosters.png"),
+            .toFile(oneDest)
+            .then(() => oneDest),
+          sharp(data, { raw: info })
+            .toFile(twoDest)
+            .then(() => twoDest),
         ])
       )
   );

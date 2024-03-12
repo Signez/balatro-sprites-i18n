@@ -1,7 +1,10 @@
 const sharp = require("sharp");
 const { swapColors, swapColorsIf } = require("./colorize");
 
-function generateBlindChipsSheet(zoneData, consumablesLocales) {
+function generateBlindChipsSheet(locale, zoneData, consumablesLocales) {
+  const oneDest = `dist/${locale}/1x/BlindChips.png`;
+  const twoDest = `dist/${locale}/2x/BlindChips.png`;
+
   const stickersKeys = Object.keys(zoneData.blind_chips.stickers);
   const overrides = consumablesLocales.overrides["BlindChips.png"] ?? {};
 
@@ -105,8 +108,11 @@ function generateBlindChipsSheet(zoneData, consumablesLocales) {
             .resize(info.width / 2, info.height / 2, {
               kernel: sharp.kernel.nearest,
             })
-            .toFile("dist/fr/1x/BlindChips.png"),
-          sharp(data, { raw: info }).toFile("dist/fr/2x/BlindChips.png"),
+            .toFile(oneDest)
+            .then(() => oneDest),
+          sharp(data, { raw: info })
+            .toFile(twoDest)
+            .then(() => twoDest),
         ])
       )
   );

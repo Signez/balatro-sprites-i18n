@@ -1,7 +1,10 @@
 const sharp = require("sharp");
 const { swapColors } = require("./colorize");
 
-function generateVouchersSheet(zoneData, consumablesLocales) {
+function generateVouchersSheet(locale, zoneData, consumablesLocales) {
+  const oneDest = `dist/${locale}/1x/Vouchers.png`;
+  const twoDest = `dist/${locale}/2x/Vouchers.png`;
+
   const stickersKeys = Object.keys(zoneData.vouchers.stickers);
   const overrides = consumablesLocales.overrides["Vouchers.png"] ?? {};
 
@@ -28,7 +31,7 @@ function generateVouchersSheet(zoneData, consumablesLocales) {
   const preprocesses = Object.values(composites).map((composite) => {
     if (!composite.filename) return Promise.resolve(null);
 
-    return sharp("locales/fr/" + composite.filename)
+    return sharp(`locales/${locale}/${composite.filename}`)
       .raw()
       .toBuffer({ resolveWithObject: true })
       .then(({ data, info }) => {
@@ -79,8 +82,11 @@ function generateVouchersSheet(zoneData, consumablesLocales) {
             .resize(info.width / 2, info.height / 2, {
               kernel: sharp.kernel.nearest,
             })
-            .toFile("dist/fr/1x/Vouchers.png"),
-          sharp(data, { raw: info }).toFile("dist/fr/2x/Vouchers.png"),
+            .toFile(oneDest)
+            .then(() => oneDest),
+          sharp(data, { raw: info })
+            .toFile(twoDest)
+            .then(() => twoDest),
         ])
       )
   );

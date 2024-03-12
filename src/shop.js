@@ -1,6 +1,9 @@
 const sharp = require("sharp");
 
-function generateShopSignAnimationSheet(zoneData, consumablesLocales) {
+function generateShopSignAnimationSheet(locale, zoneData, consumablesLocales) {
+  const oneDest = `dist/${locale}/1x/ShopSignAnimation.png`;
+  const twoDest = `dist/${locale}/2x/ShopSignAnimation.png`;
+
   const stickersKeys = Object.keys(zoneData.shop_sign_animation.stickers);
   const overrides = consumablesLocales.overrides["ShopSignAnimation.png"] ?? {};
 
@@ -26,7 +29,7 @@ function generateShopSignAnimationSheet(zoneData, consumablesLocales) {
   const preprocesses = Object.values(composites).map((composite) => {
     if (!composite.filename) return Promise.resolve(null);
 
-    return sharp("locales/fr/" + composite.filename)
+    return sharp(`locales/${locale}/${composite.filename}`)
       .raw()
       .toBuffer({ resolveWithObject: true })
       .then(({ data, info }) => {
@@ -65,8 +68,11 @@ function generateShopSignAnimationSheet(zoneData, consumablesLocales) {
             .resize(info.width / 2, info.height / 2, {
               kernel: sharp.kernel.nearest,
             })
-            .toFile("dist/fr/1x/ShopSignAnimation.png"),
-          sharp(data, { raw: info }).toFile("dist/fr/2x/ShopSignAnimation.png"),
+            .toFile(oneDest)
+            .then(() => oneDest),
+          sharp(data, { raw: info })
+            .toFile(twoDest)
+            .then(() => twoDest),
         ])
       )
   );

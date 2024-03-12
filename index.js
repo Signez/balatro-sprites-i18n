@@ -1,4 +1,3 @@
-const sharp = require("sharp");
 const fs = require("node:fs");
 const { generateTarotsSheet } = require("./src/tarots");
 const { generateBoostersSheet } = require("./src/boosters");
@@ -6,10 +5,14 @@ const { generateVouchersSheet } = require("./src/vouchers");
 const { generateBlindChipsSheet } = require("./src/blind_chips");
 const { generateJokersSheet } = require("./src/jokers");
 const { generateShopSignAnimationSheet } = require("./src/shop");
+const { alphaDiscrepanciesCoordinates } = require("./test/check-alpha");
+const path = require("node:path");
+
+const locale = "fr";
 
 // Ensure the output directory exist for this locale
-fs.mkdirSync("dist/fr/1x", { recursive: true });
-fs.mkdirSync("dist/fr/2x", { recursive: true });
+fs.mkdirSync(`dist/${locale}/1x`, { recursive: true });
+fs.mkdirSync(`dist/${locale}/2x`, { recursive: true });
 
 const fontPath = fs.realpathSync(
   "assets/balatro-extended-consumable-cards.ttf"
@@ -17,29 +20,56 @@ const fontPath = fs.realpathSync(
 const zoneData = JSON.parse(fs.readFileSync("blanks/zones.json", "utf8"));
 
 const consumablesLocales = JSON.parse(
-  fs.readFileSync("locales/fr/consumables.json", "utf8")
+  fs.readFileSync(`locales/${locale}/consumables.json`, "utf8")
 );
 
-generateTarotsSheet(zoneData, consumablesLocales, fontPath).then(() =>
-  console.log("Tarots sheet generated.")
-);
+const logAndReturn2x = (gen) =>
+  gen.then(([oneDest, twoDest]) => {
+    console.log(`Generated: ${oneDest}`);
+    console.log(`Generated: ${twoDest}`);
+    return twoDest;
+  });
 
-generateBoostersSheet(zoneData, consumablesLocales).then(() =>
-  console.log("Boosters sheet generated.")
-);
+Promise.all(
+  [
+    generateTarotsSheet(locale, zoneData, consumablesLocales, fontPath),
+    generateBoostersSheet(locale, zoneData, consumablesLocales),
+    generateVouchersSheet(locale, zoneData, consumablesLocales),
+    generateBlindChipsSheet(locale, zoneData, consumablesLocales),
+    generateShopSignAnimationSheet(locale, zoneData, consumablesLocales),
+    generateJokersSheet(locale, zoneData, consumablesLocales),
+  ].map(logAndReturn2x)
+)
+  .then((twoDests) => {
+    let hasDiscrepancies = false;
 
-generateVouchersSheet(zoneData, consumablesLocales).then(() =>
-  console.log("Vouchers sheet generated.")
-);
+    const comparisons = twoDests.map(async (generatedSheet) => {
+      const referenceSheet = "test/reference/" + path.basename(generatedSheet);
 
-generateBlindChipsSheet(zoneData, consumablesLocales).then(() =>
-  console.log("Blind chips sheet generated.")
-);
+      if (fs.existsSync(referenceSheet)) {
+        const discrepancies = await alphaDiscrepanciesCoordinates(
+          referenceSheet,
+          generatedSheet
+        );
 
-generateShopSignAnimationSheet(zoneData, consumablesLocales).then(() =>
-  console.log("Shop sign animation sheet generated.")
-);
+        if (discrepancies.length) {
+          console.error(
+            `E: Discrepancies found in ${path.basename(generatedSheet)}`
+          );
+          console.error(discrepancies);
+          return true;
+        }
 
-generateJokersSheet(zoneData, consumablesLocales).then(() =>
-  console.log("Jokers sheet generated.")
-);
+        return false;
+      }
+    });
+
+    return Promise.all(comparisons);
+  })
+  .then((results) => {
+    if (!results.some(Boolean)) {
+      console.log(
+        "No discrepancies found in alpha between original and reference sheets. All good!"
+      );
+    }
+  });
