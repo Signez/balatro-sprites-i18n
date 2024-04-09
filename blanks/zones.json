@@ -746,5 +746,131 @@
       "filename": "jokers/j_reserved_parking.png",
       "location": [852, 2470]
     }
+  },
+  "deck_content": {
+    "classes": {
+      "up heart": {
+        "normal": {
+          "tint": [240, 52, 100, 255]
+        },
+        "high_contrast": {
+          "tint": [208, 29, 17, 255]
+        }
+      },
+      "down heart": {
+        "flip": true,
+        "normal": {
+          "tint": [240, 52, 100, 255]
+        },
+        "high_contrast": {
+          "tint": [248, 59, 47, 255]
+        }
+      },
+      "up clover": {
+        "normal": {
+          "tint": [35, 89, 85, 255]
+        },
+        "high_contrast": {
+          "from": [0, 123, 199, 255],
+          "to": [0, 125, 203, 255]
+        }
+      },
+      "down clover": {
+        "flip": true,
+        "normal": {
+          "tint": [35, 89, 85, 255]
+        },
+        "high_contrast": {
+          "tint": [0, 156, 253, 255]
+        }
+      },
+      "up diamond": {
+        "normal": {
+          "tint": [240, 107, 63, 255]
+        },
+        "high_contrast": {
+          "tint": [199, 127, 0, 255]
+        }
+      },
+      "down diamond": {
+        "flip": true,
+        "normal": {
+          "tint": [240, 107, 63, 255]
+        },
+        "high_contrast": {
+          "tint": [255, 163, 0, 255]
+        }
+      },
+      "up spade": {
+        "normal": {
+          "tint": [60, 67, 104, 255]
+        },
+        "high_contrast": {
+          "tint": [55, 70, 73, 255]
+        }
+      },
+      "down spade": {
+        "flip": true,
+        "normal": {
+          "tint": [60, 67, 104, 255]
+        },
+        "high_contrast": {
+          "from": [77, 97, 101, 255],
+          "to": [79, 99, 103, 255]
+        }
+      }
+    },
+    "jack": {
+      "filename": "jack.png",
+      "locations_with_classes": [
+        [1290, 14, "up heart"],
+        [1392, 160, "down heart"],
+        [1290, 204, "up clover"],
+        [1392, 350, "down clover"],
+        [1290, 394, "up diamond"],
+        [1392, 540, "down diamond"],
+        [1290, 584, "up spade"],
+        [1392, 730, "down spade"]
+      ]
+    },
+    "queen": {
+      "filename": "queen.png",
+      "locations_with_classes": [
+        [1432, 14, "up heart"],
+        [1534, 160, "down heart"],
+        [1432, 204, "up clover"],
+        [1534, 350, "down clover"],
+        [1432, 394, "up diamond"],
+        [1534, 540, "down diamond"],
+        [1432, 584, "up spade"],
+        [1534, 730, "down spade"]
+      ]
+    },
+    "king": {
+      "filename": "king.png",
+      "locations_with_classes": [
+        [1574, 14, "up heart"],
+        [1676, 160, "down heart"],
+        [1574, 204, "up clover"],
+        [1676, 350, "down clover"],
+        [1574, 394, "up diamond"],
+        [1676, 540, "down diamond"],
+        [1574, 584, "up spade"],
+        [1676, 730, "down spade"]
+      ]
+    },
+    "ace": {
+      "filename": "ace.png",
+      "locations_with_classes": [
+        [1716, 14, "up heart"],
+        [1818, 160, "down heart"],
+        [1716, 204, "up clover"],
+        [1818, 350, "down clover"],
+        [1716, 394, "up diamond"],
+        [1818, 540, "down diamond"],
+        [1716, 584, "up spade"],
+        [1818, 730, "down spade"]
+      ]
+    }
   }
 }

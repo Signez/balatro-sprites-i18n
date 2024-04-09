@@ -5,6 +5,7 @@ const { generateVouchersSheet } = require("./src/vouchers");
 const { generateBlindChipsSheet } = require("./src/blind_chips");
 const { generateJokersSheet } = require("./src/jokers");
 const { generateShopSignAnimationSheet } = require("./src/shop");
+const { generateDeckContentSheet } = require("./src/deck_content");
 const { alphaDiscrepanciesCoordinates } = require("./test/check-alpha");
 const path = require("node:path");
 
@@ -24,9 +25,10 @@ const consumablesLocales = JSON.parse(
 );
 
 const logAndReturn2x = (gen) =>
-  gen.then(([oneDest, twoDest]) => {
+  gen.then(([oneDest, twoDest, ...otherDest]) => {
     console.log(`Generated: ${oneDest}`);
     console.log(`Generated: ${twoDest}`);
+    otherDest.forEach((dest) => console.log(`Generated: ${dest}`));
     return twoDest;
   });
 
@@ -38,11 +40,10 @@ Promise.all(
     generateBlindChipsSheet(locale, zoneData, consumablesLocales),
     generateShopSignAnimationSheet(locale, zoneData, consumablesLocales),
     generateJokersSheet(locale, zoneData, consumablesLocales),
+    generateDeckContentSheet(locale, zoneData),
   ].map(logAndReturn2x)
 )
   .then((twoDests) => {
-    let hasDiscrepancies = false;
-
     const comparisons = twoDests.map(async (generatedSheet) => {
       const referenceSheet = "test/reference/" + path.basename(generatedSheet);
 
