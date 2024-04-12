@@ -1,0 +1,74 @@
+{
+  "overrides": {
+    "_comment": "Override stuff from zones.json in this section. It's like an escape hatch!",
+    "Tarots.png": {
+      "c_black_hole": {
+        "_comment": "We never had the force to implement the distortion, so we do it manually.",
+        "filename": "black-hole.png",
+        "location": [1302, 610]
+      }
+    }
+  },
+  "tarots": {
+    "_comment": "Translate tarots cards here. Uppercase is bold, lowercase is regular.",
+    "c_fool": "NEBUNUL",
+    "c_magician": "MAGICIANUL",
+    "c_high_priestess": "PREOTEASA",
+    "c_empress": "ÎMPÂRÂTEASA",
+    "c_emperor": "ÎMPÂRATUL",
+    "c_heirophant": "marele preot",
+    "c_lovers": "îndragostitii",
+    "c_chariot": "FAETONUL",
+    "c_justice": "DREPTATEA",
+    "c_hermit": "EREMITUL",
+    "c_wheel_of_fortune": "roata noroculu",
+    "c_strength": "FORTA",
+    "c_hanged_man": "spânzuratul",
+    "c_death": "MOARTEA",
+    "c_temperance": "ECHILIBRUL",
+    "c_devil": "DIAVOLUL",
+    "c_tower": "TURNUL",
+    "c_star": "STEAUA",
+    "c_moon": "LUNA",
+    "c_sun": "SOARELE",
+    "c_judgement": "JUDECATA",
+    "c_world": "LUMEA"
+  },
+  "planets": {
+    "_comment": "Translate planets cards here. Uppercase is bold, lowercase is regular.",
+    "c_mercury": "MERCUR",
+    "c_venus": "VENUS",
+    "c_earth": "PÂMÂNT",
+    "c_mars": "MARTE",
+    "c_jupiter": "JUPITER",
+    "c_saturn": "SATURN",
+    "c_uranus": "URANUS",
+    "c_neptune": "NEPTUN",
+    "c_pluto": "PLUTO",
+    "c_ceres": "CERES",
+    "c_planet_x": "PLANETA X",
+    "c_eris": "ERIS"
+  },
+  "spectrals": {
+    "_comment": "Translate spectral cards here. Uppercase is bold, lowercase is regular.",
+    "c_familiar": "FAMILIAR",
+    "c_grim": "MACABRU",
+    "c_incantation": "INCANTATIE",
+    "c_talisman": "TALISMAN",
+    "c_aura": "AURÂ",
+    "c_wraith": "FANTOMÂ",
+    "c_sigil": "SIGILIU",
+    "c_ouija": "OUIJA",
+    "c_ectoplasm": "ECTOPLASMÂ",
+    "c_immolate": "SACRIFICIU",
+    "c_soul": "SUFLET",
+    "__comment": "Here, we don’t translate it (null), but we provide an override so it's okay!",
+    "c_black_hole": null,
+    "c_ankh": "ANKH",
+    "c_deja_vu": "DEJA VU",
+    "c_hex": "BLESTEM",
+    "c_trance": "TRANSÂ",
+    "c_medium": "MEDIUM",
+    "c_cryptid": "CRIPTID"
+  }
+}
