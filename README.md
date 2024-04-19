@@ -2,7 +2,7 @@
 
 This repository contains clean "blank" sprites, sprite elements and scripts used to generate **localized sprite sheets for the game Balatro**. Those sprite sheets can then be used in community mods to add new languages to the game.
 
-For now, those localized sprites are used in the **[Better French translation mod](https://github.com/FrBmt-BIGetNouf/balatro-french-translations)**. You can use this repository to create your own localized sprite sheets for your language — feel free to create pull requests to add new languages!
+For now, those localized sprites are used in the **[Better French translation mod](https://github.com/FrBmt-BIGetNouf/balatro-french-translations)** as well as the **[BalatRO Romanian translation mod](https://github.com/olenicandrei/balatro-romanian-translations)**. You can use this repository to create your own localized sprite sheets for your language — feel free to create pull requests to add new languages!
 
 Note that unless noted, all the content in this repository is derived from the Balatro game files, **© 2024 LocalThunk**. This is a fan project that is not affiliated with LocalThunk or PlayStack.
 
