@@ -1,0 +1,164 @@
+{
+  "overrides": {
+    "_comment": "Override stuff from zones.json in this section. It's like an escape hatch!",
+    "Tarots.png": {
+      "c_black_hole": {
+        "_comment": "We never had the force to implement the distortion, so we do it manually.",
+        "filename": "black-hole.png",
+        "location": [1302, 610]
+      }
+    },
+	"boosters.png": {
+      "bs_ap5": {
+        "filename": "packarcano.png",
+        "location": [24, 500]
+      },
+      "bs_ap6": {
+        "filename": "packarcano.png",
+        "location": [166, 500]
+      },
+      "bs_ap7": {
+        "filename": "packarcano.png",
+        "location": [308, 498]
+      },
+      "bs_ap8": {
+        "filename": "packarcano.png",
+        "location": [450, 498]
+      },
+      "bs_cp7": {
+        "filename": "celeste.png",
+        "location": [310, 695]
+      },
+      "bs_cp8": {
+        "filename": "celeste.png",
+        "location": [452, 695]
+      },
+      "bs_st5": {
+        "location": [20, 1404]
+      },
+      "bs_st6": {
+        "location": [162, 1404]
+      },
+	  "bs_blob1": {
+        "location": [304, 692]
+      },
+	  "bs_blob2": {
+        "location": [446, 692]
+      }
+    },
+	"BlindChips.png":{
+		  "small_blind": {
+		  "locations": [
+          [8, 22],
+          [76, 22],
+          [144, 22],
+          [212, 22],
+          [280, 22],
+          [348, 22],
+          [416, 22],
+          [484, 22],
+          [552, 22],
+          [620, 22],
+          [688, 22],
+          [756, 22],
+          [824, 22],
+          [892, 22],
+          [960, 22],
+          [1028, 22],
+          [1096, 22],
+          [1164, 22],
+          [1232, 22],
+          [1300, 22],
+          [1368, 22]
+		  ]
+		},
+		  "big_blind": {
+			"locations": [
+			[8, 90],
+          [76, 90],
+          [144, 90],
+          [212, 90],
+          [280, 90],
+          [348, 90],
+          [416, 90],
+          [484, 90],
+          [552, 90],
+          [620, 90],
+          [688, 90],
+          [756, 90],
+          [824, 90],
+          [892, 90],
+          [960, 90],
+          [1028, 90],
+          [1096, 90],
+          [1164, 90],
+          [1232, 90],
+          [1300, 90],
+          [1368, 90]
+			]
+		}
+	}
+  },
+  "tarots": {
+    "_comment": "Translate tarots cards here. Uppercase is bold, lowercase is regular.",
+    "c_fool": "MATTO",
+    "c_magician": "BAGATTO",
+    "c_high_priestess": "PAPESSA",
+    "c_empress": "IMPERATRICE",
+    "c_emperor": "IMPERATORE",
+    "c_heirophant": "PAPA",
+    "c_lovers": "AMANTI",
+    "c_chariot": "CARRO",
+    "c_justice": "GIUSTIZIA",
+    "c_hermit": "EREMITA",
+    "c_wheel_of_fortune": "FORTUNA",
+    "c_strength": "FORZA",
+    "c_hanged_man": "APPESO",
+    "c_death": "MORTE",
+    "c_temperance": "TEMPERANZA",
+    "c_devil": "DIAVOLO",
+    "c_tower": "TORRE",
+    "c_star": "STELLA",
+    "c_moon": "LUNA",
+    "c_sun": "SOLE",
+    "c_judgement": "GIUDIZIO",
+    "c_world": "MONDO"
+  },
+  "planets": {
+    "_comment": "Translate planets cards here. Uppercase is bold, lowercase is regular.",
+    "c_mercury": "MERCURIO",
+    "c_venus": "VENERE",
+    "c_earth": "TERRA",
+    "c_mars": "MARTE",
+    "c_jupiter": "GIOVE",
+    "c_saturn": "SATURNO",
+    "c_uranus": "URANO",
+    "c_neptune": "NETTUNO",
+    "c_pluto": "PLUTONE",
+    "c_ceres": "CERES",
+    "c_planet_x": "PIANETA X",
+    "c_eris": "ERIS"
+  },
+  "spectrals": {
+    "_comment": "Translate spectral cards here. Uppercase is bold, lowercase is regular.",
+    "c_familiar": "FAMIGLIO",
+    "c_grim": "TENEBRE",
+    "c_incantation": "incantesimo",
+    "c_talisman": "TALISMANO",
+    "c_aura": "AURA",
+    "c_wraith": "FANTASMA",
+    "c_sigil": "SIGILLO",
+    "c_ouija": "OUIJA",
+    "c_ectoplasm": "ECTOPLASMA",
+    "c_immolate": "immolazione",
+    "c_soul": "ANIMA",
+    "__comment": "Here, we don’t translate it (null), but we provide an override so it's okay!",
+    "c_black_hole": null,
+    "c_ankh": "ANKH",
+    "c_deja_vu": "DÉJÀ VU",
+    "c_hex": "maledizione",
+    "c_trance": "TRANCE",
+    "c_medium": "MEDIUM",
+    "c_cryptid": "CRIPTIDE"
+  }
+}
