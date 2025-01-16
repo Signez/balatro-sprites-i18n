@@ -47,7 +47,7 @@
     "c_pluto": "PLUTO",
     "c_ceres": "CERES",
     "c_planet_x": "GEZEGEN X",
-    "c_eris": "ERIS"
+    "c_eris": "ERİS"
   },
   "spectrals": {
     "_comment": "Translate spectral cards here. Uppercase is bold, lowercase is regular.",
