@@ -13,10 +13,10 @@
     "_comment": "Translate tarots cards here. Uppercase is bold, lowercase is regular.",
     "c_fool": "MECNUN",
     "c_magician": "BÜYÜCÜ",
-    "c_high_priestess": "AZİZE",
+    "c_high_priestess": "AZIZE",
     "c_empress": "imparatoriçe",
     "c_emperor": "IMPARATOR",
-    "c_heirophant": "AZİZ",
+    "c_heirophant": "AZIZ",
     "c_lovers": "ASIKLAR",
     "c_chariot": "ARABA",
     "c_justice": "ADALET",
@@ -69,6 +69,6 @@
     "c_hex": "NAZAR",
     "c_trance": "TRANS",
     "c_medium": "MEDYUM",
-    "c_cryptid": "KRİPTİD"
+    "c_cryptid": "KRIPTID"
   }
 }
