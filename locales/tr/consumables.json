@@ -1,0 +1,74 @@
+{
+  "overrides": {
+    "_comment": "Override stuff from zones.json in this section. It's like an escape hatch!",
+    "Tarots.png": {
+      "c_black_hole": {
+        "_comment": "We never had the force to implement the distortion, so we do it manually.",
+        "filename": "black-hole.png",
+        "location": [1302, 610]
+      }
+    }
+  },
+  "tarots": {
+    "_comment": "Translate tarots cards here. Uppercase is bold, lowercase is regular.",
+    "c_fool": "MECNUN",
+    "c_magician": "BÜYÜCÜ",
+    "c_high_priestess": "AZIZE",
+    "c_empress": "imparatoriçe",
+    "c_emperor": "IMPARATOR",
+    "c_heirophant": "AZIZ",
+    "c_lovers": "ASIKLAR",
+    "c_chariot": "ARABA",
+    "c_justice": "ADALET",
+    "c_hermit": "ERMIS",
+    "c_wheel_of_fortune": "kader çarki",
+    "c_strength": "GÜÇ",
+    "c_hanged_man": "asilan adam",
+    "c_death": "ÖLÜM",
+    "c_temperance": "DENGE",
+    "c_devil": "SEYTAN",
+    "c_tower": "KULE",
+    "c_star": "YILDIZ",
+    "c_moon": "AY",
+    "c_sun": "GÜNES",
+    "c_judgement": "MAHKEME",
+    "c_world": "DÜNYA"
+  },
+  "planets": {
+    "_comment": "Translate planets cards here. Uppercase is bold, lowercase is regular.",
+    "c_mercury": "MERKÜR",
+    "c_venus": "VENÜS",
+    "c_earth": "DÜNYA",
+    "c_mars": "MARS",
+    "c_jupiter": "JUPITER",
+    "c_saturn": "SATÜRN",
+    "c_uranus": "URANÜS",
+    "c_neptune": "NEPTÜN",
+    "c_pluto": "PLUTO",
+    "c_ceres": "CERES",
+    "c_planet_x": "GEZEGEN X",
+    "c_eris": "ERIS"
+  },
+  "spectrals": {
+    "_comment": "Translate spectral cards here. Uppercase is bold, lowercase is regular.",
+    "c_familiar": "TANIDIK",
+    "c_grim": "GADDAR",
+    "c_incantation": "EFSUN",
+    "c_talisman": "MUSKA",
+    "c_aura": "AURA",
+    "c_wraith": "HAYALET",
+    "c_sigil": "MÜHÜR",
+    "c_ouija": "OUIJA",
+    "c_ectoplasm": "EKTOPLAZMA",
+    "c_immolate": "KURBAN",
+    "c_soul": "RUH",
+    "__comment": "Here, we don’t translate it (null), but we provide an override so it's okay!",
+    "c_black_hole": null,
+    "c_ankh": "ANKH",
+    "c_deja_vu": "DEJA VU",
+    "c_hex": "NAZAR",
+    "c_trance": "TRANS",
+    "c_medium": "MEDYUM",
+    "c_cryptid": "KRIPTID"
+  }
+}
