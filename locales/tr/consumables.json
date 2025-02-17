@@ -32,7 +32,7 @@
     "c_moon": "AY",
     "c_sun": "GÜNES",
     "c_judgement": "MAHKEME",
-    "c_world": "DÜNYA"
+    "c_world": "YERYUZU"
   },
   "planets": {
     "_comment": "Translate planets cards here. Uppercase is bold, lowercase is regular.",
